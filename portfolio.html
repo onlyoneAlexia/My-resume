@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miracle Chukwuma - Frontend Developer | Web3 Educator | Smart Contract Developer</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">&lt;Miracle /&gt;</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Hi, I'm Miracle Chukwuma">Hi, I'm Miracle Chukwuma</h1>
+            <div class="typing-container">
+                <span class="typed-text"></span>
+                <span class="cursor">&nbsp;</span>
+            </div>
+            <p class="hero-description">Building the decentralized future, one block at a time</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                <a href="#" class="btn btn-outline" download>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px;">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download Resume
+                </a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/onlyoneAlexia" target="_blank" class="social-icon" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="https://twitter.com/Moon_strk?t=au1TTFgkJDvNPXIPGlu5yA&s=09" target="_blank" class="social-icon" aria-label="Twitter">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                    </svg>
+                </a>
+                <a href="http://t.me/Alexiawealth" target="_blank" class="social-icon" aria-label="Telegram">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                    </svg>
+                </a>
+                <a href="https://medium.com/@AlexiaChukwuma" target="_blank" class="social-icon" aria-label="Medium">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="credentials">
+                <span class="credential-badge">🐺 Starknet Wolve</span>
+                <span class="credential-badge">💎 SheFi Season 13 Alumni</span>
+                <span class="credential-badge">🌉 Web3Bridge Alumni</span>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-container">
+                        <!-- Replace 'your-photo.jpg' with your actual image file -->
+                        <img src="image.png" alt="Your Profile Photo" class="profile-image">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="lead">I'm a passionate frontend developer and Web3 enthusiast dedicated to building decentralized applications and educating others about blockchain technology.</p>
+                    <p>With expertise in modern web technologies and smart contract development, I create seamless user experiences for decentralized applications. As a Web3 educator, I break down complex blockchain concepts into digestible content, helping others navigate the decentralized ecosystem.</p>
+                    <p>I believe in the transformative power of blockchain technology and am committed to contributing to a more transparent, decentralized future.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="50">0</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="100">0</h3>
+                            <p>Articles Written</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="20">0</h3>
+                            <p>Smart Contracts Deployed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications & Achievements -->
+            <div class="achievements">
+                <h3 class="achievements-title">Certifications & Achievements</h3>
+                <div class="achievements-grid">
+                    <div class="achievement-badge">
+                        <div class="achievement-icon">🐺</div>
+                        <h4>Starknet Wolve</h4>
+                        <p>Active ecosystem contributor</p>
+                    </div>
+                    <div class="achievement-badge">
+                        <div class="achievement-icon">💎</div>
+                        <h4>SheFi Season 13</h4>
+                        <p>Alumni member</p>
+                    </div>
+                    <div class="achievement-badge">
+                        <div class="achievement-icon">🌉</div>
+                        <h4>Web3Bridge</h4>
+                        <p>Cohort graduate</p>
+                    </div>
+                    <div class="achievement-badge">
+                        <div class="achievement-icon">📝</div>
+                        <h4>Technical Writer</h4>
+                        <p>100+ published articles</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <span class="skill-name">HTML/CSS/JavaScript</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="skill-name">React.js</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="skill-name">TypeScript</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="skill-name">Next.js</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="skill-name">Tailwind CSS</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="skill-name">Solidity</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="skill-name">Ethers.js / Web3.js</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="skill-name">Hardhat / Foundry</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="skill-name">Smart Contract Auditing</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="70"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="skill-name">IPFS / Decentralized Storage</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <h3>Junior Frontend Developer</h3>
+                    <span class="timeline-date">2023 - Present</span>
+                    <p>Building responsive web applications using React and modern JavaScript frameworks.</p>
+                </div>
+                <div class="experience-card">
+                    <h3>Web3 Writer & Educator</h3>
+                    <span class="timeline-date">2022 - Present</span>
+                    <p>Creating educational content about blockchain, DeFi, and Web3 development for various platforms.</p>
+                </div>
+                <div class="experience-card">
+                    <h3>Smart Contract Developer</h3>
+                    <span class="timeline-date">2022 - Present</span>
+                    <p>Developing and deploying smart contracts on Ethereum and EVM-compatible chains.</p>
+                </div>
+                <div class="experience-card">
+                    <h3>Starknet Wolve</h3>
+                    <span class="timeline-date">2024 - Present</span>
+                    <p>Active contributor to the Starknet ecosystem and community.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/onlyoneAlexia/Etherstart-Web3connection" target="_blank" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Etherstart Web3 Connection</h3>
+                        <p>A TypeScript-based Web3 integration project demonstrating seamless blockchain connectivity and wallet interactions.</p>
+                        <div class="project-tags">
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Web3</span>
+                            <span class="tag">Ethereum</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/onlyoneAlexia/ERC721_merkle_diamond_standard-main" target="_blank" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>ERC721 Merkle Diamond Standard</h3>
+                        <p>Advanced NFT implementation using Merkle trees and Diamond standard for upgradeable smart contracts.</p>
+                        <div class="project-tags">
+                            <span class="tag">Solidity</span>
+                            <span class="tag">ERC721</span>
+                            <span class="tag">Diamond</span>
+                            <span class="tag">Merkle Tree</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://alexiasquiz.vercel.app" target="_blank" class="project-link">View Live</a>
+                            <a href="https://github.com/onlyoneAlexia/Alexiasquiz" target="_blank" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Alexia's Quiz App</h3>
+                        <p>Interactive JavaScript quiz application deployed on Vercel, featuring dynamic question sets and instant feedback.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">Vercel</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/onlyoneAlexia/blockchain-Percaso" target="_blank" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Blockchain Percaso Curriculum</h3>
+                        <p>Educational blockchain curriculum and learning resource deployed on Vercel to help developers learn blockchain fundamentals.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">Education</span>
+                            <span class="tag">Blockchain</span>
+                            <span class="tag">Vercel</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/onlyoneAlexia/Mainnet-forking-swap" target="_blank" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Mainnet Forking Swap</h3>
+                        <p>DeFi testing tool for simulating token swaps on forked mainnet environments using TypeScript.</p>
+                        <div class="project-tags">
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">DeFi</span>
+                            <span class="tag">Testing</span>
+                            <span class="tag">Hardhat</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/onlyoneAlexia/ERC20Saver" target="_blank" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>ERC20 Saver</h3>
+                        <p>TypeScript-based token management tool for saving and managing ERC20 tokens efficiently.</p>
+                        <div class="project-tags">
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">ERC20</span>
+                            <span class="tag">Web3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog/Articles Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">Latest Articles</h2>
+            <p class="section-subtitle">Sharing knowledge about Web3, blockchain, and smart contract development</p>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                        </svg>
+                    </div>
+                    <h3>Getting Started with Starknet</h3>
+                    <p>A comprehensive guide for developers looking to build on Starknet and explore Cairo programming.</p>
+                    <a href="https://medium.com/@AlexiaChukwuma" target="_blank" class="read-more">Read on Medium →</a>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                        </svg>
+                    </div>
+                    <h3>Smart Contract Security Best Practices</h3>
+                    <p>Essential security patterns and common vulnerabilities to avoid when developing smart contracts.</p>
+                    <a href="https://medium.com/@AlexiaChukwuma" target="_blank" class="read-more">Read on Medium →</a>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                        </svg>
+                    </div>
+                    <h3>Web3 Frontend Development</h3>
+                    <p>Integrating Web3 wallets and interacting with smart contracts from your React applications.</p>
+                    <a href="https://medium.com/@AlexiaChukwuma" target="_blank" class="read-more">Read on Medium →</a>
+                </div>
+            </div>
+            <div class="blog-cta">
+                <a href="https://medium.com/@AlexiaChukwuma" target="_blank" class="btn btn-primary">View All Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What People Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor">
+                            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">"Alexia's expertise in Web3 and smart contract development is exceptional. Her educational content has helped countless developers enter the blockchain space."</p>
+                    <div class="testimonial-author">
+                        <h4>Web3 Community Member</h4>
+                        <span>Blockchain Developer</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor">
+                            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">"Her frontend development skills combined with Web3 knowledge make her a valuable asset to any blockchain project. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <h4>Project Collaborator</h4>
+                        <span>Tech Lead</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor">
+                            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">"As a Starknet Wolve, Alexia actively contributes to the ecosystem and helps onboard new developers. Her passion for education is inspiring."</p>
+                    <div class="testimonial-author">
+                        <h4>Starknet Community</h4>
+                        <span>Ecosystem Contributor</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            <span>alexiachukwuma@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            <span>Lagos, Nigeria</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Miracle Chukwuma. Built with passion for Web3.</p>
+            <div class="footer-links">
+                <a href="https://github.com/onlyoneAlexia" target="_blank">GitHub</a>
+                <a href="https://twitter.com/Moon_strk?t=au1TTFgkJDvNPXIPGlu5yA&s=09" target="_blank">Twitter</a>
+                <a href="http://t.me/Alexiawealth" target="_blank">Telegram</a>
+                <a href="https://medium.com/@AlexiaChukwuma" target="_blank">Medium</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>

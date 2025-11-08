@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Silly Story Generator</title>
+  <style>
+    :root{
+      --bg:#0f1220; --panel:#161a2b; --ink:#e8eaf6; --muted:#a5acc7; --accent:#6c8cff;
+      --radius:14px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;
+      color:var(--ink); background:radial-gradient(1200px 600px at 10% -10%, #1d2340, #0f1220);
+      min-height:100dvh; display:grid; place-items:center; padding:24px;
+    }
+    .card{
+      width:min(720px,100%); background:linear-gradient(180deg, #1a1f35 0%, #13172a 100%);
+      border:1px solid #23294a; border-radius:var(--radius); box-shadow:0 10px 35px rgba(0,0,0,.35);
+      padding:24px; display:grid; gap:18px;
+    }
+    h1{margin:0 0 4px; font-size:1.4rem; letter-spacing:.5px}
+    p.hint{margin:0; color:var(--muted); font-size:.95rem}
+    .row{display:flex; flex-wrap:wrap; gap:12px}
+    .field{
+      background:var(--panel); border:1px solid #222842; border-radius:12px; padding:12px 14px; color:var(--ink);
+      outline:none; width:260px;
+    }
+    .radios{
+      display:flex; gap:14px; align-items:center; padding:10px 12px; background:var(--panel);
+      border:1px solid #222842; border-radius:12px;
+    }
+    .btn{
+      appearance:none; border:0; padding:12px 16px; border-radius:12px; font-weight:700; cursor:pointer;
+      color:white; background:linear-gradient(180deg, #7a92ff, #5b76ff);
+      box-shadow:0 8px 22px rgba(108,140,255,.3);
+      transition:transform .05s ease, filter .2s ease;
+    }
+    .btn:active{transform:translateY(1px)}
+    .output{
+      background:#0f1325; border:1px dashed #2a315a; border-radius:12px; padding:16px;
+      min-height:80px; line-height:1.6; font-size:1.05rem;
+    }
+    .sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0}
+  </style>
+</head>
+<body>
+  <main class="card" aria-labelledby="title">
+    <header>
+      <h1 id="title">Silly Story Generator</h1>
+      <p class="hint">Type a custom name (optional), choose units, then click “Generate random story”.</p>
+    </header>
+
+    <div class="row" role="group" aria-label="Controls">
+      <label>
+        <span class="sr-only">Enter custom name</span>
+        <input class="field" id="customname" type="text" placeholder="Enter custom name (optional)" />
+      </label>
+
+      <div class="radios" role="radiogroup" aria-label="Units">
+        <label><input type="radio" name="units" id="us" checked /> <span>US</span></label>
+        <label><input type="radio" name="units" id="uk" /> <span>UK</span></label>
+      </div>
+
+      <button class="btn" id="randomize" type="button">Generate random story</button>
+    </div>
+
+    <p id="story" class="output" aria-live="polite"></p>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
